@@ -1,6 +1,8 @@
-# 品牌全案策略指南 (Brand Strategy Guide)
+# 品牌全案策略指南 (Brand Strategy Guide) — v2.1
 
-> 基于《品牌全案策略指南 2.0》知识体系的 Claude Code Skill。通过深度对话式诊断，引导你完成从市场调研、战略定位到战略执行的完整品牌全案策略方案。每个关键策略判断必有真实商业案例佐证，最终输出为可直接交付的 HTML 网页 PPT 或 PPTX 文件。
+> 基于《品牌全案策略指南 2.0》知识体系的 Claude Code Skill。通过深度对话式诊断，引导你完成从市场调研、战略定位到战略执行的完整品牌全案策略方案。每个关键策略判断必有真实商业案例佐证。
+>
+> **最终交付 3 份文件**：完整策略方案（PPTX/HTML，80-100+ 页）+ 品牌策略行动计划（PDF，15-25 页）+ 对话全记录（PDF）。支持国内市场与跨境电商/出海品牌。
 
 ---
 
@@ -29,6 +31,12 @@
 你可能是设计师、文案策划、新媒体运营，或者其他岗位——你已经有某个领域的执行能力，但想往上游走，从"执行别人的需求"变成"自己出策略"。你遇到的核心瓶颈是：**不了解品牌全案的系统性逻辑**，面对一个品牌问题时不知道从哪里入手分析，没办法从策略的高度看待品牌和营销问题。
 
 这个 skill 内置的完整方法论体系（生态位分析、四种定位方法决策树、定价五层塔、四轮驱动传播模型等）可以成为你的**策略思维训练场**。通过深度对话或直接撰写 brief 的方式，你能快速走完一套完整的品牌全案推导过程——每次使用都是一次实战演练，方法论和理论库会告诉你每一步背后的"为什么"。反复使用之后，这套系统性思维会内化成你自己的工作方法。
+
+### 跨境电商 / 出海品牌创业者
+
+你的品牌面向北美、欧洲、东南亚或全球市场。你面临的挑战不仅是"怎么做品牌"，还有"海外市场的数据从哪来""目标国家的消费者和国内有什么不同""竞品在 Amazon/TikTok Shop/独立站上怎么玩的"。
+
+这个 skill 内置了**完整的海外市场研究数据源体系**——从 Euromonitor、Statista、NielsenIQ 等全球权威机构，到 Amazon BSR、Reddit 社区、TikTok Creative Center 等一手数据渠道，覆盖 7 大区域（北美/欧洲/东南亚/中东/拉美/日韩/全球新兴市场）。当你提到"跨境电商""出海""Amazon""海外市场"等关键词时，skill 会自动启动海外数据搜集，额外增加 3-5 家目标市场本土竞品分析，并在定价、渠道、文化适配等维度给出针对性的海外策略。
 
 ---
 
@@ -152,7 +160,7 @@
 
 本 skill 遵循严谨的数据采集与验证方法论，确保方案的每一条判断都有据可查。
 
-### 五大信息来源
+### 五大信息来源（国内市场）
 
 | 来源类型 | 平台/机构 | 用途 |
 |---------|---------|------|
@@ -162,12 +170,24 @@
 | **第三方研究机构** | Euromonitor、凯度 Kantar、CBNDATA、QuestMobile、麦肯锡/BCG/贝恩 | 行业趋势白皮书、消费报告 |
 | **行业协会/组织** | 各行业协会年度报告、年度白皮书、政府/学术机构消费报告 | 行业政策、消费趋势 |
 
+### 海外市场数据源（跨境电商/出海品牌自动启用）
+
+> 当品牌涉及跨境电商或出海时，在五大国内来源基础上额外增加四层海外数据源。
+
+| 层级 | 类型 | 核心来源 |
+|------|------|---------|
+| **A 层** | 全球权威市场研究 | Euromonitor、Statista、NielsenIQ、Mintel、Grand View Research、IBISWorld、Frost & Sullivan |
+| **B 层** | 区域/国别专项 | 北美(US Census/Pew/eMarketer)、欧洲(Eurostat/GfK)、东南亚(e-Conomy SEA)、中东(MAGNiTT)、拉美(EBANX)、日韩(METI/KOSTAT) |
+| **C 层** | 电商平台一手数据 | Amazon(BSR/Jungle Scout)、Shopify(BuiltWith)、eBay(Terapeak)、Etsy、TikTok Shop、Temu/SHEIN |
+| **D 层** | 海外社媒与社区 | Reddit、TikTok Creative Center、Instagram、YouTube、Trustpilot、Product Hunt、Google Trends |
+
 ### 交叉验证原则
 
 - 每个关键数据点至少从 **2 类**来源交叉验证
 - 券商数据与社媒平台数据对照 — "宏观趋势" vs "微观行为"是否一致
 - 第三方机构数据与一线从业者言论对照（访谈、播客、公开演讲）
 - 来源有差异时，优先采用**最近发布、样本量更大**的一方
+- 海外数据：全球权威机构 + 区域/平台数据交叉验证；数据标注必须含地区和年份
 - 不确定的数据标注 **「待调研确认」**，不编造
 - 所有引用数据必须标注来源，格式：`[来源: 报告名称/机构, 年份]`
 
@@ -197,7 +217,7 @@ brief 模式下，提交的信息需达到 **≥ 7/10** 的充分度评分才进
 | Phase 1B 交叉验证 | — | 多源数据交叉验证，标注不确定项 |
 | Phase 2 战略定位提问 | 9 轮 | 使命、愿景、价值观、品牌人格、品牌故事、视觉方向、广告语、命名 |
 | Phase 3 执行校验提问 | 7 轮 | 产品策略、定价策略、渠道策略、内容策略、社群策略、预算规划、团队配置 |
-| Phase 4 格式化输出 | — | 调用 guizang-ppt-skill 或 ppt-master 生成 HTML / PPTX |
+| Phase 4 格式化输出 | — | 交付 3 份文件：完整方案(PPTX/HTML) + 行动计划(PDF) + 对话全记录(PDF) |
 
 **🎯 适用场景：**
 - 创业早期，对品牌方向还不清晰
@@ -294,11 +314,24 @@ Agent A：验证信息充分度（≥ 7/10 才继续）
 |------|---------|-----------|---------|
 | **准备程度** | 没想清楚 | 已有完整素材 | 任意 |
 | **耗时** | 2-3 小时 | 30-60 分钟 | 策略 + 排版各一次 |
-| **方案规模** | 中等（40-60 页） | 大（80+ 页） | 超大（80-100+ 页） |
+| **方案规模** | 大（80-100+ 页） | 大（80-100+ 页） | 超大（80-100+ 页） |
 | **策略深度** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
 | **互动程度** | 高（22 轮对话） | 低（填问卷） | 中（审阅反馈） |
-| **输出格式** | HTML / PPTX | HTML / PPTX / MD | HTML / PPTX |
+| **输出文件** | 3 份（方案 + 行动计划 + 对话记录） | 3 份（方案 + 行动计划 + 对话记录） | 3 份（方案 + 行动计划 + 对话记录） |
+| **海外市场** | ✅ 对话中提到即启用 | ✅ 问卷中标注即启用 | ✅ 同左 |
 | **一键程度** | 一键 | 一键 | 两步 |
+
+### 最终交付物（三种模式通用）
+
+完成品牌全案咨询后，你收到 **3 份文件**：
+
+| # | 交付物 | 格式 | 页数 | 用途 |
+|---|--------|------|------|------|
+| ① | **完整策略方案** | PPTX 或 HTML | 80-100+ 页 | 融资提案、策略存档、全面研读 |
+| ② | **品牌策略行动计划** | PDF | 15-25 页 | 每周执行对照、月度复盘、贴在墙上当行动指南 |
+| ③ | **对话全记录** | PDF | 30-60 页 | 回顾思考过程、团队对齐、新成员 onboarding |
+
+> **② 行动计划**是"拿了就能用"的精简执行版——只写做什么、花多少钱、谁来做，不重复分析过程。指标看板含空白追踪模板，可每月更新。
 
 ### 触发词
 
@@ -316,15 +349,17 @@ English: "brand strategy", "brand positioning", "brand plan", "brand blueprint",
 
 ---
 
-## 安装
+## 安装与更新
 
-### Claude Code
+### 安装
+
+**Claude Code**：
 
 ```bash
 git clone https://github.com/DevinKuang/brand-strategy-guide.git ~/.claude/skills/brand-strategy-guide
 ```
 
-### Codex
+**Codex**：
 
 ```bash
 git clone https://github.com/DevinKuang/brand-strategy-guide.git ~/.codex/skills/brand-strategy-guide
@@ -332,18 +367,45 @@ git clone https://github.com/DevinKuang/brand-strategy-guide.git ~/.codex/skills
 
 克隆后无需额外配置，`SKILL.md` 会被自动加载。两种平台的技能格式完全兼容。
 
+### 更新
+
+Skill 每次调用时直接从磁盘读取最新版本，**无需重新安装**。执行以下命令即可更新：
+
+```bash
+cd ~/.claude/skills/brand-strategy-guide && git pull
+```
+
+更新后下一次 `/brand-strategy-guide` 即加载新版本。可通过 `git describe --tags` 确认当前版本。
+
+### 版本历史
+
+| 版本 | 日期 | 主要变更 |
+|------|------|---------|
+| **v2.1** | 2026-06 | 修复信息丢失和页数不足问题；新增对话全记录 PDF、品牌策略行动计划 PDF、海外/跨境电商市场分析体系；最终交付物明确为三件套；80 页硬性门禁 |
+| v2.0 | — | 品牌全案策略指南 2.0 完整方法论体系 |
+
 ---
 
 ## 依赖
 
-### 输出 Skill（至少需要一个）
+### 输出 Skill
+
+**完整方案**（至少需要一个）：
 
 | Skill | 用途 | 输出 |
 |-------|------|------|
+| `ppt-master` | AI 多角色协作生成 SVG → PPTX | PPTX（推荐·主力） |
 | `guizang-ppt-skill` | HTML 网页 PPT（横向翻页，WebGL 背景） | HTML |
-| `ppt-master` | AI 多角色协作生成 SVG → PPTX | PPTX |
 
-> 如果以上两个 skill 都未安装，只能走 **MD 输出模式**——生成结构化 Markdown brief 后，单独交给排版工具处理。
+**行动计划 PDF**（可选，提升排版质量）：
+
+| Skill | 用途 | 输出 |
+|-------|------|------|
+| `kami` | 温暖排版风格 PDF 生成 | PDF |
+
+> **降级保障**：行动计划 PDF 和对话全记录 PDF 不依赖任何排版 Skill——`kami` 不可用时，自动写入 Markdown 文件，用户可用 Typora/Obsidian/Pandoc 自行导出 PDF。
+>
+> 完整方案的两个主力 Skill 都缺失时，完整方案不交付（保留中间产物待恢复），但行动计划 PDF 和对话全记录 PDF **始终可交付**。
 
 ### Python 工具（仅 brief 问卷转换）
 
@@ -360,21 +422,39 @@ python scripts/convert_brief_to_docx.py input.md [output.docx]
 
 ```
 brand-strategy-guide/
-├── SKILL.md                     # 主 skill 定义（三种模式 + 完整对话流程）
-├── instructions/                # Agent 指令
-│   ├── agent_market.md          #   市场调研 agent（外部扫描+竞品+用户洞察）
-│   ├── agent_positioning.md     #   战略定位 agent（品牌体系构建）
-│   ├── agent_execution.md       #   战略执行 agent（产品+定价+传播+商业化）
+├── SKILL.md                     # 主 skill 定义（三种模式 + 22轮对话 + 33模块 + 海外市场）
+├── README.md                    # 本文件
+├── instructions/                # Agent 指令（v2.1 更新）
+│   ├── agent_market.md          #   Agent A · 市场调研（11 模块，含海外搜索+页级拆分）
+│   ├── agent_positioning.md     #   Agent B · 战略定位（9 模块，含视觉5页+广告语独立）
+│   ├── agent_execution.md       #   Agent C · 战略执行（15 模块，含标杆案例子页+结语）
 │   ├── brief_template.md        #   brief 问卷模板（结构化表单）
 │   └── brief_sample.md          #   brief 问卷填写示例
 ├── references/                  # 方法论参考
-│   ├── system-overview.md       #   系统全景图（底层逻辑+内容框架+输出标准）
-│   ├── output-spec.md           #   输出质量规范（8 原则+6 必备+4 层质量门）
-│   ├── methodology.md           #   方法论详解（市场调研+定位+执行全流程）
+│   ├── system-overview.md       #   系统全景图（v2.1 更新 Agent 规格+页数门禁+海外来源）
+│   ├── output-spec.md           #   输出质量规范（v2.1 新增 80页门禁+三件套交付物清单）
+│   ├── methodology.md           #   方法论详解
 │   └── theory-library.md        #   理论速查库（8 个经典营销理论）
-└── scripts/
-    └── convert_brief_to_docx.py # MD → DOCX 转换工具
+├── assets/                      # 方法论图示
+├── scripts/
+│   └── convert_brief_to_docx.py # MD → DOCX 转换工具
+└── output/                      # 生成产物（gitignore，不提交）
+    ├── dialogue_brief.md        #   对话→结构化摘要（Agent 输入桥接文件）
+    ├── strategy_premise.md      #   策略前提汇总（Agent 输入桥接文件）
+    ├── full_strategy.md         #   完整文字稿（→ Phase 4 排版 Skill）
+    ├── dialogue_transcript.md   #   对话全记录（→ 交付物③ PDF）
+    └── action_plan.md           #   行动计划 MD（→ 交付物② PDF）
 ```
+
+### 关键文件说明
+
+| 文件 | 角色 | 使用者 |
+|------|------|--------|
+| `output/dialogue_brief.md` | 对话→结构化摘要。标准对话模式下 Agent A/B/C 的**主要输入源** | Agent A/B/C |
+| `output/strategy_premise.md` | Phase 3A/3B 的策略前提汇总（定位确认+能力约束） | Agent B/C |
+| `output/full_strategy.md` | 三部分合并后的完整文字稿，喂给 Phase 4 排版 Skill | Phase 4 |
+| `output/dialogue_transcript.md` | 22轮对话完整结构化记录 → 导出 PDF 交付用户 | 用户 |
+| `output/action_plan.md` | 精简行动计划 Markdown → 导出 PDF 交付用户 | 用户 |
 
 ---
 
