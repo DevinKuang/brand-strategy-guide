@@ -452,7 +452,8 @@ exports/xxx.pptx（原生 DrawingML 形状，可编辑）
 | 信息充分度门槛 | ≥ 7.0/10 |
 | 深度最低线 | L3（洞察） |
 | 最少竞品数 | 10家（国内）+ 3-5家（海外，如适用）|
-| 最少案例数 | 14 个（Part1 ≥ 3 + Part2 ≥ 3 + Part3 ≥ 8） |
+| 最少案例数 | 通过案例匹配引擎推荐（案例库共106个，每模块推荐主推1+辅助2） |
+| 案例库 | `references/case-library.md`（7大模块，106个案例） |
 | 关键桥接文件 | dialogue_brief.md（Phase 1A 后写入）+ strategy_premise.md（Phase 3A/3B 后写入） |
 | 对话交付文件 | dialogue_transcript.md（Phase 3B 后生成，可导出 PDF） |
 | 数据来源类型 | 国内市场 5 类 + 海外市场 4 层（A/B/C/D） |
